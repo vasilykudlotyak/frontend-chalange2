@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    max-width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    padding: 50px 35px 47.5px 47.5px;
+    border-radius: 8px 8px 0 0;
+    font-size: 15px;
+}
+
+.card2 {
+    background-color: var(--dark-cyan);
+    border-radius: 0;
+}
+
+.card3 {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.card_header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.3rem;
+    margin: 30px 0 25px;
+}
+
+.card_subheader {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.6rem;
+    color: var(--transparent-white);
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+button {
+    font: 14px 'Lexend Deca';
+    color: var(--bright-orange);
+    padding: 0.875rem 2.063rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.car_btn2 {
+    color: var(--dark-cyan);
+}
+
+.car_btn3 {
+    color: var(--very-dark-cyan);
+}
+
+@media(min-width: 960px) {
+    body {
+        max-width: 100vw;
+    }
+
+    .container {
+        height: 104vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_header {
+        font-size: 40px;
+    }
+
+    .card_subheader,
+    button {
+        font-size: 1rem;
+    }
+
+    .card_subheader {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 306.67px;
+        border-radius: 0;
+    }
+
+    .card1 {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .card3 {
+        border-radius: 0 8px 8px 0;
+    }
+
+    button {
+        margin-top: 60px;
+    }
+}
